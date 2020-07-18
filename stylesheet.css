@@ -1,0 +1,53 @@
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	border: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: black;
+	color: white;
+	font-family: cursive, sans-serif;
+	font-size: 16px;
+}
+
+#container {
+	position: relative;
+}
+
+#canvas {
+	width: 100%;
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
+
+#overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.map {
+	width: 50%;
+	padding: 4px 16px;
+	border: 1px solid blue;
+	border-radius: 12px;
+}
+
+.map:hover {
+	border: 1px solid lightblue;
+	cursor: pointer;
+}
